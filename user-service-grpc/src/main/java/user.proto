@@ -1,0 +1,28 @@
+syntax = 'proto3';
+
+option java_multiple_files = true;
+option java_package = "com.grpc.service";
+option java_outer_classname = "UserPhoto";
+option objc_class_prefix = "HI";
+option java_generic_services = true;
+
+package hallo;
+
+service UserService {
+
+  rpc getUserByLoginName(loginName) returns (User){}
+}
+
+
+message User {
+  string loginName = 1;
+  string name = 2;
+  string password = 3;
+  int64 id = 4;
+  string email = 5;
+  string phone = 6;
+}
+
+message loginName {
+  string loginName = 1;
+}

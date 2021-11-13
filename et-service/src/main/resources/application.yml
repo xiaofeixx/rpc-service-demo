@@ -1,0 +1,10 @@
+server:
+  port: 8088
+user:
+  service:
+    host: 192.168.0.25
+    port: 6666
+grpc:
+  service:
+    host: 192.168.0.25
+    port: 6666

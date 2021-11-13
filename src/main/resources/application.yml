@@ -1,0 +1,11 @@
+server:
+  port: 80
+
+
+thrift:
+  port: 6666
+  minThreads: 10
+  maxThreads: 100
+logging:
+  level:
+    com.rpc.user: info
